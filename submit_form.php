@@ -53,13 +53,13 @@ $responseJobNimbus = curl_exec($ch);
 curl_close($ch);
 
 // Calendly API credentials
-$calendlyBearerToken = "eyJraWQiOiIxY2UxZTEzNjE3ZGNmNzY2YjNjZWJjY2Y4ZGM1YmFmYThhNjVlNjg0MDIzZjdjMzJiZTgzNDliMjM4MDEzNWI0IiwidHlwIjoiUEFUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNzIzNTQ0NTIyLCJqdGkiOiIxNGM0ZjNkYi04ZTNlLTRkYmYtYmNmNC1jMmI4MWRlZWM2MzUiLCJ1c2VyX3V1aWQiOiJiN2QzZDg3Yy1mMjI5LTRkYzUtODhhNy1hYjgyNWQ5ZjZhYjQifQ.N3xlaVpbkfWiuB4TCN2ZoJzyjFk47J70_NUSugguYKsfzmxDNNk9ef350jVXSLTcgc8ilXr0K0rNHMgbe0ErIA";
+$calendlyBearerToken = "eyJraWQiOiIxY2UxZTEzNjE3ZGNmNzY2YjNjZWJjY2Y4ZGM1YmFmYThhNjVlNjg0MDIzZjdjMzJiZTgzNDliMjM4MDEzNWI0IiwidHlwIjoiUEFUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNzIzNDc5Nzk1LCJqdGkiOiI5YWZhMWEwMy1mYzQzLTRmZGMtODAwYy1mMGQyMjZkMjdmZTkiLCJ1c2VyX3V1aWQiOiI5ZWM0Yzg0NS0yMDIwLTQwY2YtYTFmMC1kNTZiMTBhM2QwYTEifQ.tVu3MVHUnl1cqgRqnraYQ0fTmaOofBtlrAtpyk434Eq2HagG5Ye22In4k2GHWYfpA08PCFFdDsojAWrpdPT_IQ";
 $calendlyUrl = "https://api.calendly.com/one_off_event_types";
 
 // Event data for Calendly
 $calendlyData = json_encode([
     "name" => "Roofing Service Appointment",
-    "host" => "https://api.calendly.com/users/b7d3d87c-f229-4dc5-88a7-ab825d9f6ab4",  // Replace with actual host URL
+    "host" => "https://api.calendly.com/users/9ec4c845-2020-40cf-a1f0-d56b10a3d0a1",  // Replace with actual host URL
     "duration" => 30,
     "timezone" => "America/New_York",
     "date_setting" => [
