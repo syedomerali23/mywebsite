@@ -92,6 +92,7 @@ curl_close($ch);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -108,29 +109,34 @@ curl_close($ch);
             align-items: center;
             height: 100vh;
         }
+
         .message {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         .success {
             color: #28a745;
             font-size: 18px;
         }
+
         .error {
             color: #dc3545;
             font-size: 18px;
         }
     </style>
 </head>
+
 <body>
     <div class="message">
-        <?php if ($responseJobNimbus && $responseCalendly) : ?>
+        <?php if ($responseJobNimbus && $responseCalendly): ?>
             <p class="success">Form Submitted Successfully!</p>
-        <?php else : ?>
+        <?php else: ?>
             <p class="error">There was an error submitting the form. Please try again.</p>
         <?php endif; ?>
     </div>
 </body>
+
 </html>
